@@ -290,6 +290,7 @@ def get_spacy_model(spacy_model_name: str, pos_tags: bool, parse: bool, ner: boo
         except OSError:
             logger.warning(f"Spacy models '{spacy_model_name}' not found.  Downloading and installing.")
             spacy_download(spacy_model_name)
+            spacy_model = spacy.load(spacy_model_name, disable=disable)
 
         LOADED_SPACY_MODELS[options] = spacy_model
     return LOADED_SPACY_MODELS[options]
