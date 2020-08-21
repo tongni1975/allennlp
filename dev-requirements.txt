@@ -36,7 +36,7 @@ ruamel.yaml
 # Generating markdown files from Python modules.
 git+https://github.com/NiklasRosenstein/pydoc-markdown.git@b469839ceb598df3d7e7126b81bff88dfd1343e3
 
-markdown-include==0.5.1
+markdown-include==0.6.0
 # Package for the material theme for mkdocs
 mkdocs-material==5.1.5
 
